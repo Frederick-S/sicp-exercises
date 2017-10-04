@@ -2,10 +2,9 @@ language: c
 matrix:
   include:
     - os: linux
-      dist: trusty
     - os: osx
 install:
-  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then apt-get install guile-2.0; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get install guile-2.0; fi
   - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install guile; fi
 script:
   - make compile

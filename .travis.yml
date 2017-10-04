@@ -1,5 +1,5 @@
 language: c
 install:
-  - apt-get install guile-2.2
+  - sudo apt-get install guile-2.2
 script:
   - make compile

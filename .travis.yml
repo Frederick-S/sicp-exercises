@@ -1,5 +1,6 @@
 language: c
+os: osx
 install:
-  - sudo apt-get install guile-2.2
+  - brew install guile
 script:
   - make compile

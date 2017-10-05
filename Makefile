@@ -1,2 +1,2 @@
 compile:
-	guild compile src/*/*.scm
+	raco make ./*/*.rkt

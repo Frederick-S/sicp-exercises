@@ -1,6 +1,5 @@
 language: c
-os: osx
 install:
-  - brew install guile
+  - sudo apt-get install racket
 script:
   - make compile

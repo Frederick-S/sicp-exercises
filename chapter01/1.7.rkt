@@ -26,4 +26,17 @@
 (define (average x y)
     (/ (+ x y) 2))
 
-(provide sqrt good-enough?)
+; The alternative strategy
+(define (new-sqrt x)
+    (new-sqrt-iter 1.0 x))
+
+(define (new-sqrt-iter guess x)
+    (let ([next-guess (improve guess x)])
+        (if (new-good-enough? guess next-guess)
+            guess
+            (new-sqrt-iter next-guess x))))
+
+(define (new-good-enough? guess next-guess)
+    (< (abs (- guess next-guess)) (* 1.0e-10 guess)))
+
+(provide sqrt good-enough? new-sqrt new-good-enough? improve)

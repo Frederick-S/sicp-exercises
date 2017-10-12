@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/Frederick-S/sicp-exercises.svg?branch=master)](https://travis-ci.org/Frederick-S/sicp-exercises)
+[![CircleCI](https://circleci.com/gh/Frederick-S/sicp-exercises/tree/master.svg?style=svg)](https://circleci.com/gh/Frederick-S/sicp-exercises/tree/master)

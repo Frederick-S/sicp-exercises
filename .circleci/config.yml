@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    steps:
+      - checkout
+      - run: apt-get update
+      - run: apt-get install -y racket make
+      - run: make compile
+      - run: make test

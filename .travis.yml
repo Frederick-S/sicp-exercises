@@ -1,6 +1,0 @@
-language: c
-install:
-  - sudo apt-get install racket
-script:
-  - make compile
-  - make test

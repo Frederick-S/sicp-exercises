@@ -1,6 +1,9 @@
 version: 2
 jobs:
   build:
+    working_directory: /temp
+    docker:
+      - image: ubuntu
     steps:
       - checkout
       - run: apt-get update

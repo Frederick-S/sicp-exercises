@@ -1,1 +1,1 @@
-[![CircleCI](https://circleci.com/gh/Frederick-S/sicp-exercises/tree/master.svg?style=svg)](https://circleci.com/gh/Frederick-S/sicp-exercises/tree/master)
+[![CircleCI](https://circleci.com/gh/Frederick-S/sicp-exercises/tree/master.svg?style=shield)](https://circleci.com/gh/Frederick-S/sicp-exercises/tree/master)

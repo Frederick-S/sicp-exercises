@@ -3,7 +3,5 @@ environment:
   PATH: C:\Program Files\Racket;%PATH%
 install:
   - ps: choco install racket
-build_script:
-  - ps: raco make ./*/*.rkt
 test_script:
   - ps: raco test tests

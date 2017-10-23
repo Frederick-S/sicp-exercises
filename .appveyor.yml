@@ -2,8 +2,8 @@ image: Visual Studio 2017
 environment:
   PATH: C:\Program Files\Racket;%PATH%
 install:
-  - cmd: choco install racket
+  - ps: choco install racket
 build_script:
-  - cmd: raco make *.rkt
+  - ps: raco make *.rkt
 test_script:
-  - cmd: raco test tests
+  - ps: raco test tests

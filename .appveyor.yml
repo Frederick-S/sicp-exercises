@@ -1,4 +1,6 @@
 image: Visual Studio 2017
+environment:
+  PATH: C:\Program Files\Racket;%PATH%
 install:
   - cmd: choco install racket
 build_script:

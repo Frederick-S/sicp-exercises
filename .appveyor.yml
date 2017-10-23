@@ -4,6 +4,6 @@ environment:
 install:
   - ps: choco install racket
 build_script:
-  - ps: raco make *.rkt
+  - ps: raco make ./*/*.rkt
 test_script:
   - ps: raco test tests

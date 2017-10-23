@@ -1,6 +1,6 @@
 image: Visual Studio 2017
 install:
-  -cmd: choco install racket
+  - cmd: choco install racket
 build_script:
   - cmd: raco make ./*/*.rkt
 test_script:

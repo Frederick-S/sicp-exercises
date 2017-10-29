@@ -9,8 +9,8 @@
         ((even? count)
             (fib-iter a
                 b
-                (+ (square p) (square q)) ;compute p'
-                (+ (* 2 p q)  (square q)) ;compute q'
+                (+ (square p) (square q))
+                (+ (* 2 p q)  (square q))
                 (/ count 2)))
         (else 
             (fib-iter (+ (* b q)

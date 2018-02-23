@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: apt-get update
-      - run: apt-get install -y libssl-dev ca-certificates racket make
+      - run: apt-get install -y libssl-dev ca-certificates sqlite racket make
       - run: raco pkg install --batch --deps search-auto cover-codecov
       - run: make compile
       - run: make test

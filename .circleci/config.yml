@@ -8,5 +8,7 @@ jobs:
       - checkout
       - run: apt-get update
       - run: apt-get install -y racket make
+      - run: raco pkg install cover-codecov
       - run: make compile
       - run: make test
+      - run: raco cover -f codecov -d tests/coverage -b tests

@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: apt-get update
-      - run: apt-get install -y libssl-dev racket make
+      - run: apt-get install -y libssl-dev ca-certificates racket make
       - run: raco pkg install cover-codecov
       - run: make compile
       - run: make test

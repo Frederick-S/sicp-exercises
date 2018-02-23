@@ -11,4 +11,4 @@ jobs:
       - run: raco pkg install --batch --deps search-auto cover-codecov
       - run: make compile
       - run: make test
-      - run: raco cover -f codecov -d tests/coverage -b tests
+      - run: raco cover -f codecov -d ./coverage -b tests

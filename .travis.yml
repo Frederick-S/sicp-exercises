@@ -1,7 +1,7 @@
 language: c
 
 before_install:
-  - apt-get update && apt-get install -y racket
+  - sudo apt-get update && sudo apt-get install -y racket
 
 install: raco pkg install --deps search-auto $TRAVIS_BUILD_DIR
 

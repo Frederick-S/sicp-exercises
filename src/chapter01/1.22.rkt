@@ -15,7 +15,9 @@
 
 (define (start-prime-test n start-time)
     (if (prime? n)
-        (report-prime (- (runtime) start-time))
+        (begin
+            (report-prime (- (runtime) start-time))
+            true)
         false))
 
 (define (report-prime elapsed-time)
@@ -23,10 +25,13 @@
     (display elapsed-time))
 
 (define (search-for-primes-by-count n count)
-    (when (not (equal? count 0))
+    (if (not (equal? count 0))
         (if (timed-prime-test n)
-            (search-for-primes-by-count (+ n 2) (- count 1))
-            (search-for-primes-by-count (+ n 2) count))))
+            (append (list n) (search-for-primes-by-count (+ n 2) (- count 1)))
+            (search-for-primes-by-count (+ n 2) count))
+        (list)))
 
 (define (search-for-primes n)
     (search-for-primes-by-count n 3))
+
+(provide search-for-primes)

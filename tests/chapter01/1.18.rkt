@@ -1,6 +1,6 @@
 #lang racket
 
-(require rackunit "../../chapter01/1.18.rkt")
+(require rackunit "../../src/chapter01/1.18.rkt")
 
 (check-equal? (multiply 1 0) 0 "Should return 0")
 (check-equal? (multiply 0 1) 0 "Should return 0")

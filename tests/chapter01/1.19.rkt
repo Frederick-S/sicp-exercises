@@ -1,6 +1,6 @@
 #lang racket
 
-(require rackunit "../../chapter01/1.19.rkt")
+(require rackunit "../../src/chapter01/1.19.rkt")
 
 (check-equal? (fib 1) 1 "Should return 1")
 (check-equal? (fib 3) 2 "Should return 2")

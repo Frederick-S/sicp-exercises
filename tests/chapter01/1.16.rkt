@@ -1,6 +1,6 @@
 #lang racket
 
-(require rackunit "../../chapter01/1.16.rkt")
+(require rackunit "../../src/chapter01/1.16.rkt")
 
 (check-equal? (iterative-expt 1 0) 1 "Should return 1")
 (check-equal? (iterative-expt 1 3) 1 "Should return 1")

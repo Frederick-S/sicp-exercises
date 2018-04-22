@@ -14,6 +14,4 @@
 (define (square n)
     (* n n))
 
-(smallest-divisor 199)
-(smallest-divisor 1999)
-(smallest-divisor 19999)
+(provide smallest-divisor)

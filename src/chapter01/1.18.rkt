@@ -5,8 +5,8 @@
 
 (define (multiply-iterative a b product)
     (cond ((= b 0) product)
-        ((even? b) (multiply-iterative (double a) (halve b) product))
-        (else (multiply-iterative a (- b 1) (+ a product)))))
+          ((even? b) (multiply-iterative (double a) (halve b) product))
+          (else (multiply-iterative a (- b 1) (+ a product)))))
 
 (define (even? n)
     (= (remainder n 2) 0))

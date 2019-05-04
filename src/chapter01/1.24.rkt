@@ -61,4 +61,5 @@
 
 ;; The average runtime of (search-for-primes 1000001) is about 120ms,
 ;; and the average runtime of (search-for-primes 1001) is about 76ms.
-;; Since the Fermat test has O(logn) growth, thus the average runtime of (search-for-primes 1001) should be 120 / (log1000000 / log1000) = 60ms
+;; Since the Fermat test has O(logn) growth, thus the average runtime of (search-for-primes 1001) should be 120 / (log1000000 / log1000) = 60ms.
+

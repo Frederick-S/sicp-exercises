@@ -9,6 +9,7 @@ env:
     - RACKET_VERSION=7.2
     - RACKET_VERSION=7.3
     - RACKET_VERSION=7.4
+    - RACKET_VERSION=7.5
     - RACKET_VERSION=RELEASE
 before_install:
   - git clone https://github.com/greghendershott/travis-racket.git ../travis-racket

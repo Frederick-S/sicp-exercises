@@ -62,3 +62,5 @@
 ; The average runtime of (search-for-primes 1001) is about 1670ms,
 ; and the average runtime of (search-for-primes 10001) is about 85696ms.
 ; Thus the new algorithm is much slower than the original one.
+; The new expmod method calculates the remainder of a large number at the last step,
+; while the original expmod method recursively calculates the remainder of a smaller number in each step. Thus the new algorithm is slower.

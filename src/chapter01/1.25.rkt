@@ -59,6 +59,6 @@
 
 (provide search-for-primes)
 
-;; The average runtime of (search-for-primes 1001) is about 1670ms,
-;; and the average runtime of (search-for-primes 10001) is about 85696ms.
-;; Thus the new algorithm is much slower than the original one.
+; The average runtime of (search-for-primes 1001) is about 1670ms,
+; and the average runtime of (search-for-primes 10001) is about 85696ms.
+; Thus the new algorithm is much slower than the original one.

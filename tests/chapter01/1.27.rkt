@@ -2,6 +2,7 @@
 
 (require rackunit "../../src/chapter01/1.22.rkt" "../../src/chapter01/1.27.rkt")
 
+(check-false (carmichael-test? 4))
 (check-true (carmichael-test? 561))
 (check-true (carmichael-test? 1105))
 (check-true (carmichael-test? 1729))

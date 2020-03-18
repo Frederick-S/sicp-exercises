@@ -34,4 +34,5 @@
 (define (search-for-primes n)
     (search-for-primes-by-count n 3))
 
+(provide prime?)
 (provide search-for-primes)
